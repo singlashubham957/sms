@@ -47,7 +47,7 @@ kotlin {
 
 allprojects {
 
-    group = "money.jupiter.inv.rules"
+    group = "sms"
     version = "0.0.1-SNAPSHOT"
 
     apply(plugin = "maven-publish")
@@ -78,9 +78,7 @@ allprojects {
         setProperty("pitestVersion", "1.7.0")
         setProperty("junit5PluginVersion", "0.12")
         setProperty("testPlugin", "junit5")
-        setProperty("targetClasses", listOf("money.jupiter.inv.rules.*"))
         setProperty("outputFormats", listOf("HTML", "XML"))
-        setProperty("excludedTestClasses", listOf("money.jupiter.inv.rules.http.*"))
         setProperty("exportLineCoverage", true)
         setProperty("reportDir", project.buildDir.resolve("reports/pitest"))
         setProperty("timestampedReports", false)
